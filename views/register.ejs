@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="icon" href="/favicon.ico" />
+    <title>Register for <%=siteName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <nav>
+          <ul> 
+              <li><A HREF="/"><span aria-hidden="true"><b>01.</b></span> home</A></li> 
+              <li><A HREF="/about"><span aria-hidden="true"><b>02.</b></span> about</A></li> 
+              <li><A HREF="/login"><span aria-hidden="true"><b>03.</b></span> login</A></li>
+              <li><A HREF="/register"><span aria-hidden="true"><b>04.</b></span> register</A></li>
+          </ul>
+          </nav>
+      </div>
+       </header>    
+    <h1>Register for <%=siteName%></h1>
+    <div class="section left-align">
+<form method="POST" action="/registered">
+  <p>First name: <input id="first" type="text" name="first" placeholder="first name" /></p>
+  <p>Last name: <input id="last" type="text" name="last" placeholder="last name" /></p>
+  <p>Email: <input id="email" type="email" name="email" placeholder="email" /></p>
+  <p>Password: <input id="password" type="password" name="password" placeholder="password" /></p>
+  <label>
+    <input type="checkbox" name="terms" value="terms"> Agree to the Terms and Conditions
+  </label><br>
+  <p><input type="submit" value="Register" /></p>
+</form>
+</div>
+      <footer>
+        <div class="footer-nav">
+         <ul class = "footer-nav-list">
+          <li><A HREF="/sitemap">site map</A></li> 
+          <li><A HREF="/privacy">privacy</A></li>
+         </ul>
+     </div>
+     <div class="toggle" onclick="toggleLightMode()" id="modeSwitch"> </div>
+     </footer>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"e>
+  <head>
+    <link rel="icon" href="/favicon.ico" />
+    <title>Welcome to <%=siteName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+    <!-- <script>function toggleLightMode(){
+      var element = document.body;
+      element.classList.toggle("dark");
+      };</script> -->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <nav>
+          <ul> 
+              <li><A HREF="/"><span aria-hidden="true"><b>01.</b></span> home</A></li> 
+              <li><A HREF="/about"><span aria-hidden="true"><b>02.</b></span> about</A></li> 
+              <li><A HREF="/login"><span aria-hidden="true"><b>03.</b></span> login</A></li>
+              <li><A HREF="/register"><span aria-hidden="true"><b>04.</b></span> register</A></li>
+          </ul>
+          </nav>
+      </div>
+       </header>    
+    <div class="content-container">
+      <div class="section left-align">
+      <p>
+        Here you can search for restaurants based on your dietary requirements and allergens.
+      </p>
+      <form method="GET" action="/restaurants">
+        <label>
+          <input type="checkbox" name="allergen" value="gluten"> Gluten
+        </label>
+        <label>
+          <input type="checkbox" name="allergen" value="dairy"> Dairy
+        </label>
+        <label>
+          <input type="checkbox" name="allergen" value="egg"> Egg
+        </label>
+        
+        <label>
+          <input type="checkbox" name="allergen" value="soy"> Soy
+        </label>
+        <label>
+          <input type="checkbox" name="allergen" value="wheat"> Wheat
+        </label>
+        <label>
+          <input type="checkbox" name="allergen" value="peanuts"> Peanuts
+        </label>
+        <label>
+          <input type="checkbox" name="allergen" value="treenuts"> Tree Nuts
+        </label>
+        <label>
+          <input type="checkbox" name="allergen" value="fish"> Fish
+        </label>
+        <label>
+          <input type="checkbox" name="allergen" value="shellfish"> Shellfish
+        </label>
+        <label>
+          <input type="checkbox" name="allergen" value="mustard"> Mustard
+        </label>
+        <label>
+          <input type="checkbox" name="allergen" value="celery"> Celery
+        </label>
+        <label>
+          <input type="checkbox" name="allergen" value="sesame"> Sesame
+        </label>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    </div>
+    <div class="white"></div>
+    <footer>
+      <div class="footer-nav">
+       <ul class = "footer-nav-list">
+        <li><A HREF="/sitemap">site map</A></li> 
+        <li><A HREF="/privacy">privacy</A></li>
+       </ul>
+   </div>
+   </footer>
+   <div class="toggle" onclick="toggleLightMode()" id="modeSwitch"> </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" />
+    <title>Restaurants</title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+    <script>
+    function displayDate(){
+      document.getElementById('time').innerHTML = Date();
+    }   </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <nav>
+          <ul> 
+              <li><A HREF="/"><span aria-hidden="true"><b>01.</b></span> home</A></li> 
+              <li><A HREF="/about"><span aria-hidden="true"><b>02.</b></span> about</A></li> 
+              <li><A HREF="/login"><span aria-hidden="true"><b>03.</b></span> login</A></li>
+              <li><A HREF="/register"><span aria-hidden="true"><b>04.</b></span> register</A></li>
+          </ul>
+          </nav>
+      </div>
+       </header>    
+    <h1>Available Restaurants</h1>
+
+    <ul>
+      <% for (let i = 0; i < availableRestaurants.length; i++) { %>
+        <li class="restaurant-box"><%= availableRestaurants[i].name %></li>
+      <% } %>
+    </ul>
+    <h1> Last updated:  <span id="time"> </span></h1>
+
+    <footer>
+      <div class="footer-nav">
+       <ul class = "footer-nav-list">
+        <li><A HREF="/sitemap">site map</A></li> 
+        <li><A HREF="/privacy">privacy</A></li>
+       </ul>
+   </div>
+   <div class="toggle" onclick="toggleLightMode()" id="modeSwitch"> </div>
+   </footer>
+  </body>
+</html>
