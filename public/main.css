@@ -73,15 +73,9 @@ nav a:hover::before
 form
 {
     font-family: OpenSansReg, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
 }
-
-
-/* .white{
-  background-color: white;
-    padding: 0 0;
-    min-height: 50px;
-} */
-
 
 
 h1 {
@@ -109,7 +103,7 @@ p,li {
   
   .content-container {
     color: rgb(0, 0, 0);
-    position: relative;
+    text-align: center;
 }
 
   .intro {
@@ -132,49 +126,72 @@ p,li {
     overflow: hidden;
   }
   
-  .left-align {
-    float: left;
-    width: 50%;
-  }
-  
   .section p {
     font-size: 13px;
     line-height: 1.5;
   }
+
+
   
   /*Footer Navigation*/
 .footer-nav
 {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+   
+    height:300px;
     width: 100%;
     background-color: rgb(46, 140, 167);
     color: white;
-    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
     
 }
 
+
+
 .footer-nav-list
 {
-    margin: 0;
-    padding: 0;
+
     list-style: none;
+    color: white;
     font-family: OpenSansReg, sans-serif;
     
 
 }
 
-.footer-nav-list li 
-{
-    display: inline;
+.left{
+    text-align: center;
+    background-color: rgb(33, 113, 136);
+    color: white;
+    margin: 10px;
+    width: 47%;
+    height: 280px;
+    float: left;
 }
+
+.right{
+    text-align: center;
+    background-color: rgb(33, 113, 136);
+    color: white;
+    margin: 10px;
+    width: 47%;
+    float: right;
+    height: 280px;
+}
+
 
 .footer-nav-list a 
 {
-    color: black;
+    color: white;
     font-size: 14px;
     text-decoration: none;
+}
+
+.footer-headers{
+    color: white;
 }
 
 nav a:hover 
@@ -187,6 +204,10 @@ nav a:hover
     padding: 20px;
     margin-bottom: 10px;
     list-style-type: none;
+  }
+
+  .button-reg{
+    margin-top: 10px;
   }
 
 /* Dark and Light mode switches and CSS */ 

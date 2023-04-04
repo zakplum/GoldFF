@@ -19,26 +19,43 @@
       </div>
        </header>    
     <h1>Register for <%=siteName%></h1>
-    <div class="section left-align">
+    <div class="section">
 <form method="POST" action="/registered">
   <p>First name: <input id="first" type="text" name="first" placeholder="first name" /></p>
   <p>Last name: <input id="last" type="text" name="last" placeholder="last name" /></p>
   <p>Email: <input id="email" type="email" name="email" placeholder="email" /></p>
   <p>Password: <input id="password" type="password" name="password" placeholder="password" /></p>
   <label>
-    <input type="checkbox" name="terms" value="terms"> Agree to the Terms and Conditions
+    <input type="checkbox" name="terms" value="terms"> Agree to the Terms and Conditions<text style="color:red;">*</text>
   </label><br>
-  <p><input type="submit" value="Register" /></p>
+  <p><input class="button-reg" type="submit" value="Register" /></p>
 </form>
 </div>
       <footer>
         <div class="footer-nav">
+          <div class="left">
          <ul class = "footer-nav-list">
-          <li><A HREF="/sitemap">site map</A></li> 
-          <li><A HREF="/privacy">privacy</A></li>
+          <h1 class="footer-headers">Discover GFF</h1>
+          <li><A HREF="/">investors</A></li> 
+          <li><A HREF="/about">about us</A></li>
+          <li><A HREF="/">careers</A></li>
+          <li><A HREF="/">more</A></li> 
+          <li><A HREF="/">gift cards</A></li>
+          <li><A HREF="/">careers</A></li>
          </ul>
+        </div>
+        <div class ="right">
+          <ul class = "footer-nav-list">
+            <h1 class="footer-headers">Legal</h1>
+            <li><A HREF="/sitemap">site map</A></li> 
+            <li><A HREF="/privacy">privacy</A></li>
+            <li><A HREF="/">cookies</A></li> 
+            <li><A HREF="/">modern slavery statement</A></li>
+            <li><A HREF="/">tax strategy</A></li> 
+            <li><A HREF="/">section 172 statement</A></li>
+           </ul>
+        </div>
      </div>
-     <div class="toggle" onclick="toggleLightMode()" id="modeSwitch"> </div>
      </footer>
   </body>
 </html>
